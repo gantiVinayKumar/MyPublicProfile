@@ -1,0 +1,41 @@
+.carousel-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-content {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+.prev-button {
+    left: 10px;
+}
+
+.next-button {
+    right: 10px;
+}
+.carousel-container {
+    position: relative;
+}

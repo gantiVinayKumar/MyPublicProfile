@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="stylesheet" href="/utilities/tailwind.css">
+   <link rel="stylesheet" href="/utilities/tailwind.js">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies and Water Parks</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body class="bg-gray-100">
+
+    <!-- Fixed Navbar -->
+    <nav class="fixed top-0 left-0 w-full bg-gray-800 text-white p-4 shadow-md z-50">
+        <div class="max-w-screen-xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-semibold">Movie & Water Parks</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#movies" class="hover:text-gray-400">Movies</a></li>
+                <li><a href="#waterparks" class="hover:text-gray-400">Water Parks</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+
+    <section id="movies" class="mt-24 p-6">
+        <h2 class="text-3xl font-bold mb-6 text-center">Top Movies</h2>
+
+        <!-- Movie Carousel -->
+        <div class="carousel-wrapper max-w-screen-lg mx-auto carousel-container">
+            <div class="carousel-content flex" id="carousel-content">
+                <div class="carousel-item bg-blue-600 text-white">Sholay</div>
+                <div class="carousel-item bg-red-600 text-white">Shola Aur Shabnam</div>
+                <div class="carousel-item bg-yellow-600 text-white">Agneepath</div>
+                <div class="carousel-item bg-green-600 text-white">Kabhi Khushi Kabhi Gham</div>
+                <div class="carousel-item bg-purple-600 text-white">Dilwale Dulhania Le Jayenge</div>
+                <div class="carousel-item bg-indigo-600 text-white">Lagaan</div>
+                <div class="carousel-item bg-pink-600 text-white">Dhoom</div>
+                <div class="carousel-item bg-teal-600 text-white">Kuch Kuch Hota Hai</div>
+                <div class="carousel-item bg-orange-600 text-white">3 Idiots</div>
+                <div class="carousel-item bg-gray-600 text-white">Zindagi Na Milegi Dobara</div>
+            </div>
+
+            <!-- Carousel Buttons -->
+            <button class="carousel-button prev-button" onclick="moveCarousel(-1)">&#10094;</button>
+            <button class="carousel-button next-button" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="waterparks" class="p-6">
+        <h2 class="text-3xl font-bold mb-6 text-center">Top Water Parks in Hyderabad</h2>
+
+        <!-- Water Park Carousel -->
+        <div class="carousel-wrapper max-w-screen-lg mx-auto carousel-container">
+            <div class="carousel-content flex" id="carousel-waterparks">
+                <div class="carousel-item bg-blue-400 text-white">Wonderla</div>
+                <div class="carousel-item bg-red-400 text-white">Ocean Park</div>
+                <div class="carousel-item bg-yellow-400 text-white">Ramoji Film City</div>
+                <div class="carousel-item bg-green-400 text-white">Mount Opera</div>
+                <div class="carousel-item bg-purple-400 text-white">Sree Sainath Water Park</div>
+                <div class="carousel-item bg-indigo-400 text-white">Jalavihar</div>
+                <div class="carousel-item bg-pink-400 text-white">Escape Water Park</div>
+                <div class="carousel-item bg-teal-400 text-white">NTR Gardens</div>
+                <div class="carousel-item bg-orange-400 text-white">Hi Tech City</div>
+                <div class="carousel-item bg-gray-400 text-white">Splash Water Park</div>
+            </div>
+
+            <!-- Water Park Carousel Buttons -->
+            <button class="carousel-button prev-button" onclick="moveWaterParkCarousel(-1)">&#10094;</button>
+            <button class="carousel-button next-button" onclick="moveWaterParkCarousel(1)">&#10095;</button>
+        </div>
+    </section>
+
+    
+</body>
+
+</html>
